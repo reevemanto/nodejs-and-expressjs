@@ -29,7 +29,7 @@ app.get('/items', (req, res) => {
     res.json(items);
 });
 
-// Add item (using /items for POST as shown in module)
+// Add item 
 app.post('/items', (req, res) => {
     const newItem = req.body.item;
     items.push(newItem);
